@@ -138,6 +138,11 @@ nav ul li a:hover {
 	border-left-color: #db4437;/*Rouge foncé*/
 }
 
+.maintenance{
+        background-color:#e6e6fa;/*lavende*/
+	border-left-color: #ee82ee;/*Violet*/
+}	    		
+
 .competence-block h2{
 	margin-bottom: 0.5rem;
 	color: #222;/*Bleu minuit*/
