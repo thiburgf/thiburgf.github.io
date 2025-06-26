@@ -1,0 +1,224 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+	font-family: Arial,sans-serif;
+	line-height: 1.6;
+	background-color: #f5f5f5;
+	color: #333;
+}
+
+body { 
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.wrapper{
+	flex: 1;
+}
+
+header,footer {
+	background-color: #444;
+	color: white;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+footer {
+	padding: 1rem;
+}
+
+/*Le style CSS de la barre de navigation*/
+
+nav {
+	margin-top: 1rem;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #ffcc00;
+	text-decoration: underline;
+	transition: color 0.9s ease, text-decoration 0.9s ease;
+}
+
+/*On applique du CSS sur le contenu principal*/
+
+.container{
+	padding: 1.5rem;
+	max-width: 900px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+/*Images*/
+
+.photo{
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 20px;
+	display: block;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 5px solid;
+	border-bottom: 5px solid;
+	border-left: 5px solid;
+	border-right: 5px solid;
+	border-top-color: black;
+	border-bottom-color: black;
+	border-left-color: black;
+	border-right-color: black;
+
+
+}
+
+
+/*Le block de compétences*/
+
+.competence-block{
+	background-color: #e8f0fe;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-left: 6px solid #4a90e2;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+
+.competence-block:hover{
+	transform: translate(-16px);
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+
+}
+
+.windows{
+	background-color: #e8f0fe; /*Bleu clair*/
+	border-left-color: #4a90e2;/*Bleu foncé*/
+}
+
+.reseau{
+	background-color: #fef7e0;/*Jaune clair*/
+	border-left-color: #f4b400;/*Jaune foncé*/
+}
+
+.architecture{	
+	background-color: #e6f4ea;/*Vert clair*/
+	border-left-color: #0f9d58;/*Vert foncé*/
+}
+
+.web{	
+	background-color: #fce8e6;/*Rouge clair*/
+	border-left-color: #db4437;/*Rouge foncé*/
+}
+
+.competence-block h2{
+	margin-bottom: 0.5rem;
+	color: #222;/*Bleu minuit*/
+	font-size: 1.3rem;
+}
+
+.competence-block ul{
+	margin-top: 0.5rem;
+	padding-left: 1.5rem;
+}
+
+.highlight{
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #f0f0f0;
+	padding: 0.75rem 1rem;
+	border-radius: 20px;
+
+}
+
+
+
+.album .galerie{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+
+}
+.album .galerie img{
+	width: 100%;
+	max-width: 200px;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+	margin: 1rem auto;
+	border: 5px solid #ccc;
+	border-radius: 20px;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.lightbox{
+	display: none; /*Caché par défaut*/
+	position: fixed;
+	z-index: 1000;
+	padding-top: 60px;
+	left: 0; 
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+
+}
+.lightbox-content{
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.lightbox .close{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
